@@ -64,7 +64,7 @@ class HTMLParser(BaseParser):
 
 
 class JSONParser(BaseParser):
-    __WB_URL = 'https://wbx-cosntent-v2.wbstatic.net/ru/{article}.json'
+    __WB_URL = 'https://wbx-content-v2.wbstatic.net/ru/{article}.json'
 
     def preparing_data(self, article: Union[str, int], **kwargs) -> None:
         super().preparing_data(self.__WB_URL.format(article=article))
